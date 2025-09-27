@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://br5k0g00fdqr3"]
+
+[ext_resource type="Script" uid="uid://cb1ao5ocvvatg" path="res://sacrifice_resources.gd" id="1_jv57y"]
+[ext_resource type="Texture2D" uid="uid://dec11ixsbic6" path="res://sacrifice_resource.png" id="2_wf54u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xm8js"]
+size = Vector2(56, 39.5)
+
+[node name="SacrificeResources" type="Area2D"]
+script = ExtResource("1_jv57y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 0.30588236, 1)
+position = Vector2(325, 200)
+scale = Vector2(0.222, 0.2)
+texture = ExtResource("2_wf54u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(325, 200.25)
+shape = SubResource("RectangleShape2D_xm8js")
